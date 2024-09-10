@@ -1,0 +1,46 @@
+ubunru@coo1:~$ mkdir -p DOS_2241025006/DOSass1/dir1
+ubunru@coo1:~$ mkdir DOS_2241025006/DOSass1/dir2
+ubunru@coo1:~$ cd DOS_2241025006/DOSass1/dir2
+ubunru@coo1:~/DOS_2241025006/DOSass1/dir2$
+ubunru@coo1:~/DOS_2241025006/DOSass1/dir2$ cd ~/DOS_2241025006
+ubunru@coo1:~/DOS_2241025006$ rmdir DOSass1/dir2
+ubunru@coo1:~/DOS_2241025006$ cd DOS_2241025006/DOSass1/dir1
+-bash: cd: DOS_2241025006/DOSass1/dir1: No such file or directory
+ubunru@coo1:~/DOS_2241025006$ mkdir DOS_2241025006/DOSass1/dir1
+ubunru@coo1:~/DOS_2241025006$ cd DOS_2241025006/DOSass1/dir1
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ cat > file1
+Sampurna Yanda, 2241025006, CSE, 5th semester, 17,ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ cat file1
+Sampurna Yanda, 2241025006, CSE, 5th semester, 17,ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ cat > file2
+1st-9.1,2nd-8.9,3rd-8.9,4th-8.7 ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ cat file1 file2 > file3
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ mv file2 markinfo
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ cp file1 reginfo
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ 1s -i file1 markinfo reginfo
+1s: command not found
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ ls -i file1 markinfo reginfo
+3664 file1  3665 markinfo  5641 reginfo
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ ls
+file1  file3  markinfo  reginfo
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ rm file1
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ wc markinfo
+ 0  1 32 markinfo
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ cat > Personalinfo
+Sampurna Yanda, 2241025006, west bengal ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ tac markinfo
+1st-9.1,2nd-8.9,3rd-8.9,4th-8.7 ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ cmp reginfo Personalinfo
+reginfo Personalinfo differ: byte 29, line 1
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ diff reginfo Personalinfo
+1c1
+< Sampurna Yanda, 2241025006, CSE, 5th semester, 17,
+\ No newline at end of file
+---
+> Sampurna Yanda, 2241025006, west bengal
+\ No newline at end of file
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ ls | wc -1
+wc: invalid option -- '1'
+Try 'wc --help' for more information.
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ ls | wc -l
+4
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ ls > temp && mv temp filelist
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ chmod a+w reginfo
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ chmod g-w reginfo
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$ chmod 777 reginfo
+ubunru@coo1:~/DOS_2241025006/DOS_2241025006/DOSass1/dir1$
